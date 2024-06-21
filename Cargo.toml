@@ -1,5 +1,6 @@
 [workspace]
-members = [ "crates/chainio/clients/avsregistry/",
+members = [ "crates/aws/kms/",
+"crates/chainio/clients/avsregistry/",
 "crates/chainio/clients/elcontracts/",
 "crates/chainio/clients/eth/",
 "crates/chainio/clients/fireblocks/",
@@ -48,6 +49,8 @@ rustdoc.all = "warn"
 metrics-exporter-prometheus = "0.12.0"
 ethers =  "2.0.14"
 ark-ff = "0.4.0"
+aws-config = { version = "1.1.7", features = ["behavior-version-latest"] }
+aws-sdk-kms = "1.33.0"
 eyre = "0.6.12"
 syn = "2.0"
 quote = "1.0"
