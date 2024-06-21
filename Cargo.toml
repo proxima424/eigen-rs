@@ -1,5 +1,6 @@
 [workspace]
 members = [ "crates/aws/kms/",
+"crates/aws/secretmanager/",
 "crates/chainio/clients/avsregistry/",
 "crates/chainio/clients/elcontracts/",
 "crates/chainio/clients/eth/",

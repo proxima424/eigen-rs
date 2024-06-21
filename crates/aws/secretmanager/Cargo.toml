@@ -1,0 +1,9 @@
+[package]
+name = "eigen-client-aws-secretmanager"
+
+version.workspace = true
+
+[dependencies]
+aws-config = "1.5.3"
+aws-sdk-secretsmanager = "1.37.0"
+tokio = { version = "1.38.0", features = ["full"] }

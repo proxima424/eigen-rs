@@ -851,6 +851,29 @@ dependencies = [
 ]
 
 [[package]]
+name = "aws-sdk-secretsmanager"
+version = "1.37.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "93a081cd200c6bfe2245c75f0d6707c8773a0fac81fc028f6f9ab2f2d749142f"
+dependencies = [
+ "aws-credential-types",
+ "aws-runtime",
+ "aws-smithy-async",
+ "aws-smithy-http",
+ "aws-smithy-json",
+ "aws-smithy-runtime",
+ "aws-smithy-runtime-api",
+ "aws-smithy-types",
+ "aws-types",
+ "bytes",
+ "fastrand",
+ "http 0.2.12",
+ "once_cell",
+ "regex-lite",
+ "tracing",
+]
+
+[[package]]
 name = "aws-sdk-sso"
 version = "1.33.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1769,6 +1792,15 @@ dependencies = [
  "thiserror",
  "tokio",
  "tracing",
+]
+
+[[package]]
+name = "eigen-client-aws-secretmanager"
+version = "0.0.1-alpha"
+dependencies = [
+ "aws-config",
+ "aws-sdk-secretsmanager",
+ "tokio",
 ]
 
 [[package]]
