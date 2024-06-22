@@ -3,7 +3,7 @@ use aws_sdk_secretsmanager::Client;
 use aws_sdk_secretsmanager::types::GetSecretValueInput;
 use std::error::Error;
 
-async fn ReadStringFromSecretManager(secret_name : &str, region : &str) -> Result< String, Box<>dyn Error> {
+async fn ReadStringFromSecretManager(secret_name : &str, region : &str) -> Result< String, Box<dyn Error>> {
     let region_provider = RegionProviderChain::default_provider().or_else(region);
     let config = aws_config::from_env().region(region_provider).load().await?;
 
